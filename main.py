@@ -15,7 +15,7 @@ from fastapi.security import APIKeyHeader
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger("uvicorn.error")
-app = FastAPI(title="API de Libros", version="1.1")
+app = FastAPI(title="API de Libros", version="1.2")
 
 API_KEY = os.environ.get("API_KEY")  # secreto: lo inyecta la plataforma
 URL_CAMBIO = os.environ.get("URL_CAMBIO", "https://api.frankfurter.dev/v1/latest")  # configuración
